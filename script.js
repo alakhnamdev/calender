@@ -43,6 +43,7 @@ let setCurrentDate = () => {
             PrevMonthDays = days;
         }
     });
+    totalDays = (totalDays==28&&date.getFullYear()%4==0) ? 29 : totalDays;
     day.innerHTML = "";
     NextMonthDays = 42 - (totalDays + emptyDates);
     PrevMonthDays -= emptyDates;
