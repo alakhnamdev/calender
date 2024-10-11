@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: #525252;
+    font-family: poppins;
+    transition: all 0.25s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(167deg, rgba(110, 86, 215, 0.8498), rgba(49, 188, 117, 0.7544));
+}
+
+#calender {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 30px;
+    width: 500px;
+    background: #ffffffcf;
+    border: 4px solid #545454;
+    border-radius: 40px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+
+#head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#month,
+#year {
+    background: #ffffff;
+    padding: 0px 0;
+    margin: 5px;
+    text-align: center;
+    border-radius: 20px;
+    width: 40%;
+    font-weight: 900;
+    cursor: pointer;
+    border: 4px solid #545454;
+}
+
+#next,
+#prev {
+    border: 4px solid #545454;
+    background: #ffffff;
+    /* padding: 15px 0; */
+    margin: 5px;
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 20px;
+    width: 10%;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+#next button,
+#prev button {
+    background: none;
+    border: none;
+    font-size: 2em;
+    width: 35px;
+    cursor: pointer;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+#next:active,
+#prev:active,
+#month:active,
+#year:active {
+    scale: 0.8;
+}
+
+#dates,
+#week {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.days,
+.emptyDays,
+.weekDays,
+.currentDate {
+    cursor: pointer;
+    text-align: center;
+    /* background: #d1d1d1; */
+    padding: 5px;
+    border-radius: 30px;
+    height: 30px;
+    width: 30px;
+    margin: 10px 0;
+    transition: all 0.25s ease;
+}
+
+.currentDate {
+    border: 4px solid #545454;
+}
+
+.days:hover,
+.currentDate:hover {
+    background: #545454;
+}
+
+.days:hover h4,
+.currentDate:hover h4 {
+    color: #ffffff;
+}
+
+select {
+    outline: none;
+    border: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    height: 60px;
+    width: 90%;
+    text-align: center;
+    cursor: pointer;
+    background: none;
+}
+
+h4 {
+    margin-top: 3px;
+}
+
+.emptyDays {
+    opacity: 0.4;
+}
+
+#dates .days h4,
+.emptyDays h4 {
+    font-weight: normal;
+}
+
+@media only screen and (max-width:600px) {
+    #calender {
+        width: 300px;
+        padding: 20px;
+        padding-top: 40px;
+    }
+
+    .currentDate {
+        border: 2px solid #545454;
+    }
+
+    #next,
+    #prev {
+        border: 2px solid #545454;
+        background: #ffffff;
+        /* padding: 15px 0; */
+        margin: 5px;
+        padding: 0px 0;
+        text-align: center;
+        border-radius: 20px;
+        width: 10%;
+        font-weight: 900;
+        cursor: pointer;
+    }
+
+    select {
+        outline: none;
+        border: none;
+        font-size: 0.8em;
+        font-weight: 700;
+        height: 30px;
+        width: 90%;
+        text-align: center;
+        cursor: pointer;
+        background: none;
+    }
+
+    #next button,
+    #prev button {
+        text-align: center;
+        font-size: 1.25em;
+        padding-right: 5px;
+    }
+
+    #month,
+    #year {
+        border: 2px solid #545454;
+    }
+
+    #month{
+        width: 50%;
+    }
+    #year{
+        width: 30%;
+    }
+
+    .weekDays{
+        font-size: 0.8em;
+    }
+}
