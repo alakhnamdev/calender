@@ -150,12 +150,11 @@ h4 {
     }
 
     .currentDate {
-        border: 2px solid #545454;
+        border: 2px solid #056800aa;
     }
 
     #next,
     #prev {
-        border: 2px solid #545454;
         padding: 0px 0;
     }
 
@@ -169,11 +168,6 @@ h4 {
     #prev button {
         font-size: 1.25em;
         padding-right: 5px;
-    }
-
-    #month,
-    #year {
-        border: 2px solid #545454;
     }
 
     #month {
