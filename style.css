@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    color: #525252;
+    color: #056800aa;
     font-family: poppins;
     transition: all 0.25s ease;
     -webkit-tap-highlight-color: transparent;
@@ -9,7 +9,7 @@
 
 body {
     height: 100vh;
-    background: linear-gradient(167deg, rgba(110, 86, 215, 0.8498), rgba(49, 188, 117, 0.7544));
+    background: #c9ffc6a9;
 }
 
 #calender {
@@ -18,12 +18,12 @@ body {
     left: 50%;
     padding: 30px;
     width: 500px;
-    background: #ffffffcf;
-    border: 4px solid #545454;
+    background: #c9ffc6a9;
     border-radius: 40px;
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
+    box-shadow: 0 0 50px 5px rgba(0, 0, 0, 0.2);
 }
 
 #head {
@@ -34,7 +34,7 @@ body {
 
 #month,
 #year {
-    background: #ffffff;
+    background: #056800aa;
     padding: 0px 0;
     margin: 5px;
     text-align: center;
@@ -42,13 +42,11 @@ body {
     width: 40%;
     font-weight: 900;
     cursor: pointer;
-    border: 4px solid #545454;
 }
 
 #next,
 #prev {
-    border: 4px solid #545454;
-    background: #ffffff;
+    background: #056800aa;
     margin: 5px;
     padding: 5px 0;
     text-align: center;
@@ -61,6 +59,7 @@ body {
 #next button,
 #prev button {
     background: none;
+    color: #c6ffc3;
     border: none;
     font-size: 2em;
     width: 35px;
@@ -89,7 +88,6 @@ body {
 .currentDate {
     cursor: pointer;
     text-align: center;
-    /* background: #d1d1d1; */
     padding: 5px;
     border-radius: 30px;
     height: 30px;
@@ -100,25 +98,26 @@ body {
 
 .currentDate {
     padding: 3px;
-    background: #545454;
-    border: 4px solid #545454;
+    background: #056800aa;
+    border: 4px solid #056800aa;
 }
 
 .currentDate h4{
-    color: #ffffff;
+    color: #c6ffc3;
 }
 
 .days:hover,
 .currentDate:hover {
-    background: #545454;
+    background: #056800aa;
 }
 
 .days:hover h4,
 .currentDate:hover h4 {
-    color: #ffffff;
+    color: #c6ffc3;
 }
 
 select {
+    color: #c6ffc3;
     outline: none;
     border: none;
     font-size: 1.2em;
